@@ -34,15 +34,15 @@ echo '修改banner'
 rm -rf package/base-files/files/etc/banner
 cp -f ../banner package/base-files/files/etc/
 
-echo '下载ServerChan'
-git clone https://github.com/tty228/luci-app-serverchan ../diy/luci-app-serverchan
+#echo '下载ServerChan'
+#git clone https://github.com/tty228/luci-app-serverchan ../diy/luci-app-serverchan
 
-echo 'JD script'
-git clone https://github.com/jerrykuku/luci-app-jd-dailybonus ../diy/luci-app-jd-dailybonus
+#echo 'JD script'
+#git clone https://github.com/jerrykuku/luci-app-jd-dailybonus ../diy/luci-app-jd-dailybonus
 
-echo '下载AdGuard Home'
-svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome ../diy/luci-app-adguardhome 
-svn co https://github.com/kenzok8/openwrt-packages/trunk/AdGuardHome ../diy/AdGuardHome
+#echo '下载AdGuard Home'
+#svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome ../diy/luci-app-adguardhome 
+#svn co https://github.com/kenzok8/openwrt-packages/trunk/AdGuardHome ../diy/AdGuardHome
 
 echo '集成diy目录'
 ln -s ../../diy ./package/openwrt-packages
